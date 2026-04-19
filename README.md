@@ -8,6 +8,10 @@ Author: LLM Fine-Tuning Practice Community
 
 # LLM Fine-Tuning Practice
 
+## 📖 Repository Description
+
+A comprehensive, hands-on educational repository for learning Large Language Model (LLM) fine-tuning from fundamentals to advanced topics. This resource provides 9 structured chapters with interactive Jupyter notebooks, detailed lab documentation, and real-world exercises covering LoRA, QLoRA, data preparation, training loops, evaluation with alignment techniques (RLHF, DPO), and vision-language models. Designed for developers, data scientists, and AI engineers to master cost-effective fine-tuning using parameter-efficient methods that work on consumer GPUs.
+
 ## 🎯 Educational Mission
 
 A comprehensive LLM fine-tuning learning environment designed for developers, data scientists, and AI engineers who want to master modern fine-tuning techniques through hands-on practice with Large Language Models.
