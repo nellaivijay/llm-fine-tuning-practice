@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # Jupyter Notebook Service
+  jupyter:
+    image: llm-fine-tuning:latest
+    container_name: llm-jupyter
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/workspace/notebooks
+      - ./data:/workspace/data
+      - ./models:/workspace/models
+      - ./outputs:/workspace/outputs
+      - ./checkpoints:/workspace/checkpoints
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - CUDA_VISIBLE_DEVICES=0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
+    networks:
+      - llm-network
+
+  # MLflow Tracking Server (Optional)
+  mlflow:
+    image: python:3.10-slim
+    container_name: llm-mlflow
+    command: >
+      bash -c "pip install mlflow && mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /mlflow/artifacts --host 0.0.0.0 --port 5000"
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-data:/mlflow
+    networks:
+      - llm-network
+
+  # TensorBoard (Optional)
+  tensorboard:
+    image: llm-fine-tuning:latest
+    container_name: llm-tensorboard
+    command: tensorboard --logdir /workspace/logs --host 0.0.0.0 --port 6006
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./logs:/workspace/logs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    networks:
+      - llm-network
+
+networks:
+  llm-network:
+    driver: bridge
+
+volumes:
+  mlflow-data:

@@ -1,0 +1,6 @@
+# robots.txt for LLM Fine-Tuning Practice
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nellaivijay.github.io/llm-fine-tuning-practice/sitemap.xml

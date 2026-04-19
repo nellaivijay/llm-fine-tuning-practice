@@ -1,0 +1,183 @@
+# Compiled class files
+*.class
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.pydevproject
+.python-version
+*.venv
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.ipynb_checkpoints/
+!notebooks/*.ipynb
+
+# Model files (keep structure, ignore large models)
+models/*.safetensors
+models/*.bin
+models/*.pt
+models/*.pth
+!models/.gitkeep
+!models/README.md
+
+# Data files (keep structure, ignore large data)
+data/*.json
+data/*.jsonl
+data/*.parquet
+data/*.csv
+data/*.txt
+!data/.gitkeep
+!data/README.md
+
+# Checkpoints
+checkpoints/
+*.ckpt
+checkpoint-*/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE specific
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Build artifacts
+dist/
+build/
+out/
+
+# Hugging Face cache
+.cache/
+.huggingface/
+
+# Weights and Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# TensorBoard
+runs/
+events.out.tfevents.*
+
+# Secrets
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+secrets/
+*.secret
+*.password
+api_key.txt
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Archives
+*.tar
+*.tgz
+*.gz
+*.zip
+*.rar
+*.7z
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Package Manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Docker
+.dockerignore
+
+# Kubernetes
+*.kubeconfig
+kubeconfig
+
+# PyTorch
+*.pth
+*.pt
+
+# CUDA
+*.cu.o
+*.ptx
+
+# Text generation outputs
+outputs/
+generated/
+
+# Gradio
+gradio_cached_examples/
+
+# Streamlit
+.streamlit/
