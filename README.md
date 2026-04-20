@@ -1,3 +1,30 @@
+# LLM Fine-Tuning Practice
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
+
+## 📖 Table of Contents
+
+- [📖 Repository Description](#-repository-description)
+- [🎯 Educational Mission](#-educational-mission)
+- [🎓 Why This Repository?](#-why-this-repository)
+- [🎓 Learning Approach](#-learning-approach)
+- [🏗️ Architecture](#-architecture)
+- [🛠️ Core Stack](#️-core-stack)
+- [🎓 Chapter Structure](#-chapter-structure)
+- [🚀 Quick Start](#-quick-start)
+- [📋 Requirements](#-requirements)
+- [🔧 Configuration](#-configuration)
+- [📚 Documentation](#-documentation)
+- [💰 Cost Considerations](#-cost-considerations)
+- [🆘 Vendor Independence](#-vendor-independence)
+- [🤝 Contributing](#-contributing)
+- [👥 Community and Learning](#-community-and-learning)
+- [🔗 Related Practice Repositories](#-related-practice-repositories)
+- [📄 License](#-license)
+
 <!--
 SEO Metadata
 Title: LLM Fine-Tuning Practice - Free Hands-on Labs for Large Language Model Training
@@ -5,8 +32,6 @@ Description: Master LLM fine-tuning with free, hands-on labs. Practice LoRA, QLo
 Keywords: llm fine-tuning, fine-tuning practice, lora training, qlora, large language model, ai fine-tuning, parameter efficient fine-tuning, peft, llm tutorial
 Author: LLM Fine-Tuning Practice Community
 -->
-
-# LLM Fine-Tuning Practice
 
 ## 📖 Repository Description
 
